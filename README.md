@@ -61,3 +61,9 @@
 * After going to previous commit, but regret that, how to get back to head?
 * use `git reflog` to check SHA, then use `git reset SHA`  go back
 
+## Need to switch to other branch while in the middle of something?
+
+* commit current work 
+* go to other branches to do stuff
+* go back to previous working branch - `git reset HEAD^`
+
