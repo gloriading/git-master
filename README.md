@@ -34,3 +34,30 @@
   git config --global alias.g "log --oneline --graph"
   git config --global alias.ls 'log --graph --pretty=format:"%h <%an> %ar %s"'
   ```
+
+## Redo commits
+
+* Check the log 
+  ```
+    git log --oneline
+
+    You see: 
+    e12d8ef (HEAD -> master) add apple.html
+    85e7e30 add description in banana.txt
+    657fce7 add banana.txt
+    abb4f43 update index page
+    cef6e40 create index page
+    cc797cd init commit
+  ```
+
+* If want to redo last commit - method 1: use `reset` (i.e. go to)
+
+  ```
+    git reset HEAD^
+    or
+    git reset 85e7e30 
+  ```
+
+* After going to previous commit, but regret that, how to get back to head?
+* use `git reflog` to check SHA, then use `git reset SHA`  go back
+
