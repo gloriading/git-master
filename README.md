@@ -67,3 +67,25 @@
 * go to other branches to do stuff
 * go back to previous working branch - `git reset HEAD^`
 
+## TAG
+* Create a tag
+
+  ```
+  git tag -a v1.4 -m "my version 1.4"
+  ```
+* Delete a tag
+  ```
+  git tag -d v1.4
+  ```
+* Checkout a tag
+  ```
+  git checkout v1.4
+  ```
+* Show tag definitions
+  ```
+  git tag -n
+  ```
+* List all tags
+  ```
+  git tag
+  ```
